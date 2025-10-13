@@ -7,7 +7,7 @@ const NotFoundPage = () => {
         <div className="py-16 md:py-[6.25rem]">
             <Container>
                 <div className="flex flex-col items-center justify-center   px-4">
-                    <h1 className="  heading_3 text-[10rem] font-extrabold md:text-[12.5rem]">
+                    <h1 className="  heading_4 text-[10rem] font-extrabold md:text-[12.5rem]">
                         <span className="text-blue-500">4</span>
                         <span className="">0</span>
                         <span className="text-blue-500">4</span>

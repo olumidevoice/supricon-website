@@ -142,6 +142,15 @@
   }
 
   .heading_3 {
+
+    @apply text-[1.5rem] md:text-[2rem] font-bold leading-[110%] text-black-500;
+  }
+
+  .heading_4 {
     @apply text-2xl font-bold leading-[110%] text-black-500;
+  }
+
+  .f_btw {
+    @apply flex items-center justify-between;
   }
 }

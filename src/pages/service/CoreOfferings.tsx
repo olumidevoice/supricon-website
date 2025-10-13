@@ -50,7 +50,7 @@ const CoreOfferings = () => {
                                             {item?.icon}
                                         </div>
 
-                                        <h2 className="heading_3 text-white mt-5 md:mt-10">
+                                        <h2 className="heading_4 text-white mt-5 md:mt-10">
                                             {item?.title}
                                         </h2>
                                         <div className="md:mt-5 mt-3 text-white max-w-[31.25rem]">
@@ -71,7 +71,7 @@ const CoreOfferings = () => {
                                             {item?.icon}
                                         </div>
 
-                                        <h2 className="heading_3 text-white mt-5 md:mt-10">
+                                        <h2 className="heading_4 text-white mt-5 md:mt-10">
                                             {item?.title}
                                         </h2>
                                         <div className="md:mt-5 mt-3 text-white max-w-[31.25rem]">
@@ -96,7 +96,7 @@ const CoreOfferings = () => {
                         </div>
                         <div className=" max-w-[50rem] mt-6 bg-white/8 mx-auto text-center">
                             <div className="border border-white p-5 md:p-10 rounded-xs">
-                                <h2 className="heading_3 text-white mt-5 md:mt-10">
+                                <h2 className="heading_4 text-white mt-5 md:mt-10">
                                     Why It Matters
                                 </h2>
                                 <div className="md:mt-5 mt-3 text-white max-w-[40rem] mx-auto tracking-[0%]">

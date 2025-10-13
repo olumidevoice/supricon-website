@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Container from "./Container";
 import { Button } from "../ui/button";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { LuMenu } from "react-icons/lu";
 import { IoCloseOutline } from "react-icons/io5";
 import { cn } from "../../lib/utils";
@@ -63,20 +63,21 @@ const Navbar: React.FC<NavBarType> = ({ isTransparent = false }) => {
                                 ))}
                             </div>
                         </div>
-
-                        <Button
-                            variant={"primary"}
-                            className="w-full max-w-[10rem] hidden md:block"
-                        >
-                            Contact Us
-                        </Button>
+                        <Link to="contact">
+                            <Button
+                                variant={"primary"}
+                                className="w-full max-w-[10rem] hidden md:block"
+                            >
+                                Contact Us
+                            </Button>
+                        </Link>
 
                         <button
                             className="z-50 md:hidden text-2xl cursor-pointer"
                             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                         >
                             {isSidebarOpen ? (
-                                <IoCloseOutline className="text-red-700" />
+                                <IoCloseOutline className="text-red-700 text-3xl" />
                             ) : (
                                 <LuMenu />
                             )}
@@ -87,7 +88,7 @@ const Navbar: React.FC<NavBarType> = ({ isTransparent = false }) => {
 
             {/* Mobile Sidebar */}
             <div
-                className={`fixed top-0 left-0 h-full w-64 bg-black-25  transform transition-transform duration-300 ease-in-out md:hidden ${
+                className={`fixed top-0 left-0 h-full w-64 bg-black-25  transform transition-transform duration-300 ease-in-out md:hidden z-40 ${
                     isSidebarOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
                 onClick={close}

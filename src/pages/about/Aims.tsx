@@ -28,7 +28,7 @@ const Aims = () => {
                                     {item?.icon}
                                 </div>
 
-                                <h2 className="heading_3 text-white mt-5 md:mt-10">
+                                <h2 className="heading_4 text-white mt-5 md:mt-10">
                                     {item?.title}
                                 </h2>
                                 <div className="md:mt-5 mt-3 text-white max-w-[31.25rem]">
