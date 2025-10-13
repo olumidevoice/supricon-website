@@ -32,13 +32,13 @@ const Navbar: React.FC<NavBarType> = ({ isTransparent = false }) => {
             >
                 <Container className="">
                     <div className="flex items-center justify-between py-2 md:h-[6.25rem]">
-                        <div className="flex-shrink-0">
+                        <Link to="/" className="flex-shrink-0">
                             <img
                                 src="/images/logo.svg"
                                 alt="logo"
                                 className="h-14"
                             />
-                        </div>
+                        </Link>
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline space-x-8">
                                 {navItems.map((item) => (
@@ -63,7 +63,7 @@ const Navbar: React.FC<NavBarType> = ({ isTransparent = false }) => {
                                 ))}
                             </div>
                         </div>
-                        <Link to="contact">
+                        <Link to="contact" className="w-full max-w-[10rem]">
                             <Button
                                 variant={"primary"}
                                 className="w-full max-w-[10rem] hidden md:block"

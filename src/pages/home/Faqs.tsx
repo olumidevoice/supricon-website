@@ -66,6 +66,7 @@ const Faqs = ({ hideInfo = false }: { hideInfo?: boolean }) => {
                                     key={faq.id}
                                     value={faq.id}
                                     className="border-b-0"
+                                    data-aos="fade-up"
                                 >
                                     <AccordionTrigger className="border-b border-b-black-100 py-6 rounded-none text-black-500 font-semibold text-base md:text-[1.25rem] cursor-pointer">
                                         {faq.question}

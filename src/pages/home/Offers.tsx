@@ -59,6 +59,7 @@ const Offers = () => {
                                     to={item?.url}
                                     className="border block rounded-xs border-black-100  bg-white  h-[18.75rem] w-full p-10"
                                     key={item?.id}
+                                    data-aos="flip-up"
                                 >
                                     <div className="flex flex-col justify-between min-h-full ">
                                         <div className="">
