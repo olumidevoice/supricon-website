@@ -22,7 +22,8 @@ const Footer = () => {
             </div>
             <Container>
                 <div className="border-t border-t-black-100 py-5 md:py-10 font-ss3 f_center text-black-400">
-                    Copyright ©2025 Supricon. All rights reserved.
+                    ©️ 2025 SUPRICON LIMITED. *NDPC* Data Protection Audit
+                    Certified | *FCCPC* Compliant Business.
                 </div>
             </Container>
         </div>
@@ -102,13 +103,21 @@ const MoreInfo = () => {
             title: "Articles",
             url: "/articles",
         },
-        {
-            title: "Error 404",
-            url: "/404",
-        },
+        // {
+        //     title: "Error 404",
+        //     url: "/404",
+        // },
         {
             title: "FAQs",
             url: "/faq",
+        },
+        {
+            title: "Tersm & Condition",
+            url: "/terms",
+        },
+        {
+            title: "Privacy & Policy",
+            url: "/policy",
         },
     ];
 
@@ -142,7 +151,7 @@ const MoreInfo = () => {
                             <Link
                                 to={link?.url}
                                 key={link?.title}
-                                className=" block py-2"
+                                className=" block py-2 capitalize"
                             >
                                 {link?.title}
                             </Link>

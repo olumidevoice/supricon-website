@@ -24,13 +24,13 @@ const Faqs = ({ hideInfo = false }: { hideInfo?: boolean }) => {
     const faqData: FaqItem[] = [
         {
             id: "item-1",
-            question: "What is Suspicion Limited known for?",
-            answer: "Suspicion Limited specializes in providing innovative business solutions across multiple sectors, including digital, financial, and retail services.",
+            question: "What is Supricon Limited known for?",
+            answer: "Supricon Limited specializes in providing innovative business solutions across multiple sectors, including digital, financial, and retail services.",
         },
         {
             id: "item-2",
             question: "How can I contact customer support?",
-            answer: "You can reach our support team via the contact form on our website or email us directly at support@suspicionlimited.com.",
+            answer: "You can reach our support team via the contact form on our website or email us directly at support@Supriconlimited.com.",
         },
         {
             id: "item-3",
