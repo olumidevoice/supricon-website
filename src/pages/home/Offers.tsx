@@ -8,27 +8,27 @@ const Offers = () => {
         {
             id: 1,
             title: "RETAIL & TRADING",
-            url: "/service#",
+            url: "/services#",
         },
         {
             id: 2,
             title: "SUPPLY & DISTRIBUTION",
-            url: "/service#",
+            url: "/services#",
         },
         {
             id: 3,
-            title: "SERVICES & AGENCY",
-            url: "/service#",
+            title: "SERVICEsS & AGENCY",
+            url: "/services#",
         },
         {
             id: 4,
             title: "DIGITAL & FINANCIAL SOLUTIONS",
-            url: "/service#",
+            url: "/services#",
         },
         {
             id: 5,
             title: "TRAVEL & TOURISM",
-            url: "/service#",
+            url: "/services#",
         },
     ];
 
