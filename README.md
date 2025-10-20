@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# Supricon - React TypeScript Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with React, TypeScript, and Vite, offering a robust development environment with hot module replacement (HMR) and comprehensive ESLint configurations.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **React + TypeScript**: Type-safe development experience
+-   **Vite**: Lightning-fast build tool with HMR support
+-   **ESLint**: Extensive code quality checks
+-   **Modern Build Setup**: Using either Babel or SWC for compilation
 
-## React Compiler
+## 🛠 Getting Started
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+1. Clone the repository
+2. Install dependencies:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Start development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+## 🔧 Available Scripts
+
+-   `npm run dev -- --host` - Start development server (accessible from other devices)
+-   `npm run build` - Build for production
+-   `npm run lint` - Run ESLint checks
+-   `npm run preview -- --host` - Preview production build (accessible from other devices)
+
+## 📚 Configuration
+
+### Plugin Options
+
+Two official React plugins are supported:
+
+-   **@vitejs/plugin-react**: Uses Babel/oxc for Fast Refresh
+-   **@vitejs/plugin-react-swc**: Uses SWC for Fast Refresh
+
+### ESLint Setup
+
+The project includes a comprehensive ESLint configuration with:
+
+-   Type-aware lint rules
+-   React-specific linting (via eslint-plugin-react-x)
+-   DOM-specific rules (via eslint-plugin-react-dom)
+
+## ⚠️ Known Issues
+
+-   React Compiler is currently incompatible with SWC (tracked in [vitejs/vite-plugin-react#428](https://github.com/vitejs/vite-plugin-react/issues/428))
+
+## 📝 License
+
+MIT
