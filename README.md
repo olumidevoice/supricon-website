@@ -25,7 +25,7 @@ npm run dev
 ```
 
 ## 🔧 Available Scripts
-
+ 
 -   `npm run dev -- --host` - Start development server (accessible from other devices)
 -   `npm run build` - Build for production
 -   `npm run lint` - Run ESLint checks
