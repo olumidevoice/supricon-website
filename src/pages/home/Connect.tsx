@@ -6,7 +6,7 @@ const Connect = () => {
     return (
         <div className="bg-blue-500 text-white py-[2.5rem] md:py-[5rem]">
             <Container>
-                <div className="flex flex-col md:flex-row gap-7 md:gap-[7.5rem] md:items-end ">
+                <div className="flex flex-col md:flex-row gap-7 md:gap-[7.5rem] md:items-end justify-between">
                     <div className="max-w-[48.25rem] md:pl-10">
                         <h2 className="heading_2 text-white uppercase">
                             Let’s connect and <br /> build the future together.

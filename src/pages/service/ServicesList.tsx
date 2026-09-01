@@ -32,8 +32,8 @@ const ServicesList = () => {
         },
         {
             title: "Digital and finantial solutions",
-            desc: "At Supricon, our fintech arm is designed to make money movement simple, fast, and borderless. We are building secure financial solutions for individuals and businesses that go beyond traditional banking delays.",
-            url: "https://crestwave.ng/",
+            desc: "At SUPRICON Limited, our fintech arm CrestWave is designed to make money movement simple, fast, and borderless. We are building secure financial solutions for individuals and businesses that go beyond traditional banking delays.",
+            url: "https://app.crestwave.ng/",
             urlText: "crestwave.ng",
             image: "/images/service/s_4.png",
             align: "left",
